@@ -2,9 +2,9 @@
 
 namespace Gildsmith\Contract\Cart;
 
-use Gildsmith\Contract\Inventory\Product;
 use Gildsmith\Contract\Inventory\Quantity;
 use Gildsmith\Contract\Pricing\Price;
+use Gildsmith\Contract\Product\Product;
 
 /**
  * Represents a product in a cart.

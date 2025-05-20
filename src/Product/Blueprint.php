@@ -1,12 +1,14 @@
 <?php
 
-namespace Gildsmith\Contract\Inventory;
+namespace Gildsmith\Contract\Product;
 
 /**
  * Blueprint is a set of validation rules for product fields.
  * Think of a product as a generic "chair" or a "skirt" that requires
  * certain fields. Blueprint to a product is the same what class to
  * an object is.
+ *
+ * This object is kind of similar to Attribute Sets in Magento.
  */
 interface Blueprint
 {

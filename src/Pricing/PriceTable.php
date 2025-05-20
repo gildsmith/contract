@@ -2,7 +2,7 @@
 
 namespace Gildsmith\Contract\Pricing;
 
-use Gildsmith\Contract\Inventory\Product;
+use Gildsmith\Contract\Product\Product;
 
 /**
  * @property Product $product
