@@ -1,6 +1,6 @@
 <?php
 
-namespace Gildsmith\Contract\Product;
+namespace Gildsmith\Contract\Product\Strict;
 
 /**
  * Blueprint is a set of validation rules for product fields.
@@ -11,7 +11,7 @@ namespace Gildsmith\Contract\Product;
  * This object is kind of similar to Attribute Sets in Magento.
  * todo
  */
-interface Blueprint
+interface Blueprint extends \Gildsmith\Contract\Product\Blueprint
 {
     /**
      * // todo whether the property can be set. It prolly should allow dot notation for nested data

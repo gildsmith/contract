@@ -1,6 +1,6 @@
 <?php
 
-namespace Gildsmith\Contract\Product;
+namespace Gildsmith\Contract\Product\Strict;
 
 use Illuminate\Support\Collection;
 
@@ -25,7 +25,7 @@ use Illuminate\Support\Collection;
  * @see ProductCollection
  * todo
  */
-interface Product
+interface Product extends \Gildsmith\Contract\Product\Product
 {
     //
 }
