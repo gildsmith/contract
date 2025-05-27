@@ -9,7 +9,7 @@ use Illuminate\Support\Collection;
  * Defines a category of characteristics that products can possess,
  * each with a predefined set of possible values.
  */
-interface Attribute extends \Gildsmith\Contract\Product\Attribute
+interface AttributeInterface extends \Gildsmith\Contract\Product\AttributeInterface
 {
     /**
      * Surrogate primary key for database relations.

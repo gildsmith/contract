@@ -1,6 +1,6 @@
 <?php
 
-namespace Gildsmith\Contract\Product\Strict;
+namespace Gildsmith\Contract\Product;
 
 /**
  * Product Collection is an umbrella term to describe every kind of products set.
@@ -13,4 +13,4 @@ namespace Gildsmith\Contract\Product\Strict;
  * There are some default, common keywords you can use.
  * todo
  */
-interface ProductCollection extends \Gildsmith\Contract\Product\ProductCollection {}
+interface ProductCollectionInterface {}

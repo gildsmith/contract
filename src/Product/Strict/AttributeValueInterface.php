@@ -6,7 +6,7 @@ namespace Gildsmith\Contract\Product\Strict;
  * A single allowed value for an Attribute,
  * e.g. "red" for colour or "M" for size.
  */
-interface AttributeValue extends \Gildsmith\Contract\Product\AttributeValue
+interface AttributeValueInterface extends \Gildsmith\Contract\Product\AttributeValueInterface
 {
     /**
      * Surrogate primary key for database relations.

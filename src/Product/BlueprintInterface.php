@@ -11,7 +11,7 @@ namespace Gildsmith\Contract\Product;
  * This object is kind of similar to Attribute Sets in Magento.
  * todo
  */
-interface Blueprint
+interface BlueprintInterface
 {
     /**
      * // todo whether the property can be set. It prolly should allow dot notation for nested data

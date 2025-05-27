@@ -19,8 +19,8 @@ use Illuminate\Support\Collection;
  * @property string $name
  *  Human-readable name of the attribute.
  *
- * @property-read Collection<int, AttributeValue> $values
+ * @property-read Collection<int, AttributeValueInterface> $values
  *  Collection of all values available for this attribute.
  *  Each entry is an AttributeValue representing one possible option.
  */
-interface Attribute { }
+interface AttributeInterface { }

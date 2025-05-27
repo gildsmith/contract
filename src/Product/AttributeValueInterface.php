@@ -17,7 +17,7 @@ namespace Gildsmith\Contract\Product;
  * @property string $name
  *  Human-readable name of the attribute.
  *
- * @property-read Attribute $attribute
+ * @property-read AttributeInterface $attribute
  *  The parent Attribute this value belongs to.
  */
-interface AttributeValue {}
+interface AttributeValueInterface {}

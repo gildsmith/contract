@@ -1,6 +1,6 @@
 <?php
 
-namespace Gildsmith\Contract\Product\Strict;
+namespace Gildsmith\Contract\Product;
 
 use Illuminate\Support\Collection;
 
@@ -18,14 +18,14 @@ use Illuminate\Support\Collection;
  * might require dimensions and colour, while a car might require number of doors.
  *
  * @property int $id
- * @property Blueprint $blueprint
- * @property Collection<int, ProductCollection> $collections
- * @property Collection<int, Attribute> $attributes
+ * @property BlueprintInterface $blueprint
+ * @property Collection<int, ProductCollectionInterface> $collections
+ * @property Collection<int, AttributeInterface> $attributes
  *
  * @see ProductCollection
  * todo
  */
-interface Product extends \Gildsmith\Contract\Product\Product
+interface ProductInterface
 {
     //
 }
