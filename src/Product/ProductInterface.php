@@ -17,13 +17,28 @@ use Illuminate\Support\Collection;
  * which attributes are required for a given type. For example, a chair
  * might require dimensions and colour, while a car might require number of doors.
  *
- * @property int $id
- * @property BlueprintInterface $blueprint
- * @property Collection<int, ProductCollectionInterface> $collections
- * @property Collection<int, AttributeInterface> $attributes
+ * @property-read int $id
+ *   Surrogate primary key for database relations.
+ *   Used internally for efficient joins and indexing.
  *
- * @see ProductCollection
- * todo
+ * @property-read string $code
+ *   Unique business identifier. Immutable and used for lookups.
+ *
+ * @property-read string $name
+ *   Human-readable name.
+ *
+ * @property-read BlueprintInterface $blueprint
+ *  A blueprint that defines what attributes should the model have.
+ *
+ * @property-read Collection<int, ProductCollectionInterface> $collections
+ *  A list of all collections that the product is part of.
+ *
+ * @property-read Collection<int, AttributeValueInterface> $attributes
+ *  A collection of all attribute values assigned to this product. Since
+ *  each value belongs to exactly one attribute, it shouldn't be difficult
+ *  to get to an attribute.
+ *
+ * @see ProductCollectionInterface
  */
 interface ProductInterface
 {

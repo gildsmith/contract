@@ -17,7 +17,7 @@ use Illuminate\Support\Collection;
  *  Unique business identifier. Immutable and used for lookups.
  *
  * @property string $name
- *  Human-readable name of the attribute.
+ *  Human-readable name.
  *
  * @property-read Collection<int, AttributeValueInterface> $values
  *  Collection of all values available for this attribute.

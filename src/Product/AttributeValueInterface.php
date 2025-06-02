@@ -15,7 +15,7 @@ namespace Gildsmith\Contract\Product;
  *  Immutable and used for lookups.
  *
  * @property string $name
- *  Human-readable name of the attribute.
+ *  Human-readable name.
  *
  * @property-read AttributeInterface $attribute
  *  The parent Attribute this value belongs to.
