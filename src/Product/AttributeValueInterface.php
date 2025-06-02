@@ -2,6 +2,8 @@
 
 namespace Gildsmith\Contract\Product;
 
+use Illuminate\Support\Collection;
+
 /**
  * A single allowed value for an Attribute,
  * e.g. "red" for colour or "M" for size.
@@ -19,5 +21,9 @@ namespace Gildsmith\Contract\Product;
  *
  * @property-read AttributeInterface $attribute
  *  The parent Attribute this value belongs to.
+ *
+ * @property-read Collection<int, ProductInterface> $products
+ *  Products that have selected this value
+ *  for the corresponding attribute.
  */
 interface AttributeValueInterface {}

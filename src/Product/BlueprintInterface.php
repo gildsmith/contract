@@ -9,17 +9,27 @@ use Illuminate\Support\Collection;
  * You can think of a blueprint as an abstract "chair" or a "skirt" that
  * requires certain attributes to be complete.
  *
- * This object is kind of similar to Attribute Sets in Magento.
- * todo
+ * This object is similar to Attribute Sets in Magento.
+ * It defines which attributes are expected on a product,
+ * and optionally enforces strict mode, forbidding extra ones.
+ *
+ * @property-read string $id
+ *  Surrogate primary key for database relations.
+ *  Used internally for efficient joins and indexing.
+ *
+ * @property-read string $code
+ *  Unique business identifier.
+ *  Immutable and used for lookups.
  *
  * @property string $name
- *   Human-readable name.
+ *  Human-readable name.
  *
  * @property Collection<int, AttributeInterface> $attributes
- *  List of all attributes attached to this
+ *  List of all attributes attached to this.
+ *  These define the structure expected of a product.
  *
  * @property Collection<int, ProductInterface> $products
- *  todo
+ *  Products currently assigned to this blueprint.
  *
  * @property-read bool $strict
  *  Whether this Blueprint forbids any attributes that
@@ -28,12 +38,14 @@ use Illuminate\Support\Collection;
 interface BlueprintInterface
 {
     /**
-     * todo whether the property can be set. This checks against strict.
+     * Determines whether the given attribute codes
+     * are allowed on products using this blueprint.
      */
-    public function allows(string ...$properties): bool;
+    public function allows(string ...$codes): bool;
 
     /**
-     * todo just like allows but also checks if it's required
+     * Checks if the given attribute codes are both
+     * allowed and required by this blueprint.
      */
-    public function requires(string ...$properties): bool;
+    public function requires(string ...$codes): bool;
 }

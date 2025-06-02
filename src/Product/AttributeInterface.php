@@ -14,7 +14,8 @@ use Illuminate\Support\Collection;
  *  Used internally for efficient joins and indexing.
  *
  * @property-read string $code
- *  Unique business identifier. Immutable and used for lookups.
+ *  Unique business identifier.
+ *  Immutable and used for lookups.
  *
  * @property string $name
  *  Human-readable name.
@@ -22,5 +23,8 @@ use Illuminate\Support\Collection;
  * @property-read Collection<int, AttributeValueInterface> $values
  *  Collection of all values available for this attribute.
  *  Each entry is an AttributeValue representing one possible option.
+ *
+ * @property-read Collection<int, BlueprintInterface> $blueprints
+ *  Blueprints that include this attribute in their definition.
  */
-interface AttributeInterface { }
+interface AttributeInterface {}
