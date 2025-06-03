@@ -38,5 +38,14 @@ use Illuminate\Support\Collection;
  *  A collection of all attribute values assigned to this product. Since
  *  each value belongs to exactly one attribute, it shouldn't be difficult
  *  to get to an attribute.
+ *
+ * @property null $created_at
+ *  todo
+ *
+ * @property null $updated_at
+ *  todo
+ *
+ * @property null $deleted_at
+ *   todo
  */
 interface ProductInterface {}
