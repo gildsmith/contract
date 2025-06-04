@@ -11,12 +11,12 @@ use Illuminate\Support\Collection;
  * @property int $id
  * @property string $name
  * @property array<int, string> $domains
- * @property Collection<int, Currency> $currencies
- * @property Collection<int, Language> $languages
- * @property Currency $defaultCurrency
- * @property Language $defaultLanguage
+ * @property Collection<int, CurrencyInterface> $currencies
+ * @property Collection<int, LanguageInterface> $languages
+ * @property CurrencyInterface $defaultCurrency
+ * @property LanguageInterface $defaultLanguage
  */
-interface Website
+interface WebsiteInterface
 {
     //
 }

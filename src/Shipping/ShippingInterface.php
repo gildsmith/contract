@@ -4,10 +4,10 @@ namespace Gildsmith\Contract\Shipping;
 
 /**
  * @property int $id
- * @property ShippingMethod $method
+ * @property ShippingMethodInterface $method
  *                                  TODO shipping/pickup? fulfillmentType?
  */
-interface Shipping
+interface ShippingInterface
 {
     //
 }

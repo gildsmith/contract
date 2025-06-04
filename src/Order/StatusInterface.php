@@ -2,4 +2,4 @@
 
 namespace Gildsmith\Contract\Order;
 
-interface Status {}
+interface StatusInterface {}

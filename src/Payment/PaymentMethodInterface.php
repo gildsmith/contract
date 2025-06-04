@@ -5,7 +5,7 @@ namespace Gildsmith\Contract\Payment;
 /**
  * @property int $id
  */
-interface PaymentMethod
+interface PaymentMethodInterface
 {
     //
 }

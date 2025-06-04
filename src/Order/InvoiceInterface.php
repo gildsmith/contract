@@ -4,9 +4,9 @@ namespace Gildsmith\Contract\Order;
 
 /**
  * @property int $id
- * @property Order $order
+ * @property OrderInterface $order
  */
-interface Invoice
+interface InvoiceInterface
 {
     //
 }

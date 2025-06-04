@@ -7,7 +7,7 @@ namespace Gildsmith\Contract\Context;
  *
  * @property string $code
  */
-interface Language
+interface LanguageInterface
 {
     //
 }
