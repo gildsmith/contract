@@ -5,7 +5,7 @@ namespace Gildsmith\Contract\Inventory;
 /**
  * @property int $id
  */
-interface Quantity
+interface QuantityInterface
 {
     //
 }

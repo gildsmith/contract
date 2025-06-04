@@ -2,7 +2,7 @@
 
 namespace Gildsmith\Contract\Pricing;
 
-interface Tax extends PriceModifier
+interface TaxInterface extends PriceModifierInterface
 {
     //
 }

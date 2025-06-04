@@ -2,7 +2,7 @@
 
 namespace Gildsmith\Contract\Pricing;
 
-interface PriceModifier
+interface PriceModifierInterface
 {
     // function modify(Product $product, Cart $cart)
 }
