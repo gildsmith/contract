@@ -2,6 +2,7 @@
 
 namespace Gildsmith\Contract\Facades;
 
+use Gildsmith\Contract\Product\ProductInterface;
 use Illuminate\Support\Collection;
 
 /**
@@ -17,14 +18,14 @@ interface TrashableFacadeInterface extends CrudFacadeInterface
      *
      * @return TModel|null
      */
-    public function findIncludingTrashed(string $code);
+    public function find(string $code, bool $withTrashed = false);
 
     /**
-     * Retrieve all models including soft-deleted ones.
+     * Retrieve all models.
      *
      * @return Collection<int, TModel>
      */
-    public function allIncludingTrashed(): Collection;
+    public function all(bool $withTrashed = false): Collection;
 
     /**
      * Retrieve only soft-deleted models.
