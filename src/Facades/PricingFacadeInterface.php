@@ -2,4 +2,4 @@
 
 namespace Gildsmith\Contract\Facades;
 
-interface Pricing {}
+interface PricingFacadeInterface {}

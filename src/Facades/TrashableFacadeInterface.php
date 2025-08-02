@@ -8,9 +8,9 @@ use Illuminate\Support\Collection;
  * CRUD facade with soft-delete support.
  *
  * @template TModel
- * @extends CrudFacade<TModel>
+ * @extends CrudFacadeInterface<TModel>
  */
-interface TrashableFacade extends CrudFacade
+interface TrashableFacadeInterface extends CrudFacadeInterface
 {
     /**
      * Retrieve a model by code, including soft-deleted models.
