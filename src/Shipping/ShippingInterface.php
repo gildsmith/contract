@@ -5,7 +5,7 @@ namespace Gildsmith\Contract\Shipping;
 /**
  * @property int $id
  * @property ShippingMethodInterface $method
- *                                  TODO shipping/pickup? fulfillmentType?
+ *  Fulfillment method used, such as shipping or in-store pickup.
  */
 interface ShippingInterface
 {

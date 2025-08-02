@@ -39,13 +39,13 @@ use Illuminate\Support\Collection;
  *  each value belongs to exactly one attribute, it shouldn't be difficult
  *  to get to an attribute.
  *
- * @property null $created_at
- *  todo
+ * @property-read \DateTimeInterface|null $created_at
+ *  Timestamp when the product was created.
  *
- * @property null $updated_at
- *  todo
+ * @property-read \DateTimeInterface|null $updated_at
+ *  Timestamp when the product was last updated.
  *
- * @property null $deleted_at
- *   todo
+ * @property-read \DateTimeInterface|null $deleted_at
+ *  Timestamp when the product was soft deleted, or null if active.
  */
 interface ProductInterface {}
