@@ -9,7 +9,7 @@ use Illuminate\Support\Collection;
  *
  * @template TModel
  */
-interface CrudFacade
+interface CrudFacadeInterface
 {
     /**
      * Retrieve a model by its unique code.
