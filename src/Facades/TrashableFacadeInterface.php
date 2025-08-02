@@ -42,5 +42,5 @@ interface TrashableFacadeInterface extends CrudFacadeInterface
     /**
      * Permanently delete a model by its code.
      */
-    public function forceDelete(string $code): bool;
+    public function delete(string $code, bool $force = false): bool;
 }

@@ -38,6 +38,4 @@ interface ProductFacadeInterface extends TrashableFacadeInterface
      * Access the product collection management facade.
      */
     public function collection(): ProductCollectionFacadeInterface;
-
-    // CRUD operations inherited from TrashableFacadeInterface
 }
