@@ -2,6 +2,10 @@
 
 namespace Gildsmith\Contract\Facades;
 
+use Gildsmith\Contract\Facades\Product\Attribute as AttributeFacade;
+use Gildsmith\Contract\Facades\Product\AttributeValue as AttributeValueFacade;
+use Gildsmith\Contract\Facades\Product\Blueprint as BlueprintFacade;
+use Gildsmith\Contract\Facades\Product\ProductCollection as ProductCollectionFacade;
 use Gildsmith\Contract\Product\ProductInterface;
 use Gildsmith\Support\Utils\ValidationRules;
 use Illuminate\Support\Collection;
@@ -14,6 +18,26 @@ use Illuminate\Support\Collection;
  */
 interface Product
 {
+    /**
+     * Access the attribute management facade.
+     */
+    public function attribute(): AttributeFacade;
+
+    /**
+     * Access the attribute value management facade.
+     */
+    public function attributeValue(): AttributeValueFacade;
+
+    /**
+     * Access the blueprint management facade.
+     */
+    public function blueprint(): BlueprintFacade;
+
+    /**
+     * Access the product collection management facade.
+     */
+    public function collection(): ProductCollectionFacade;
+
     /**
      * Retrieve a product by its unique code.
      *
