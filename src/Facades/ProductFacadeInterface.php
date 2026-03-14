@@ -7,7 +7,6 @@ use Gildsmith\Contract\Facades\Product\AttributeValueFacadeInterface;
 use Gildsmith\Contract\Facades\Product\BlueprintFacadeInterface;
 use Gildsmith\Contract\Facades\Product\ProductCollectionFacadeInterface;
 use Gildsmith\Contract\Product\ProductInterface;
-use Gildsmith\Contract\Facades\TrashableFacadeInterface;
 
 /**
  * Product Facade serves as a programmatic interface for managing products.
